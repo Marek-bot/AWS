@@ -1,0 +1,25 @@
+template-file-path: cron.yaml
+parameters:
+  TemplatePath: cron.yaml
+  ParameterOverrides: ''
+  CodePipelineName: Deploynanowo
+  ConnectionArn: >-
+    arn:aws:codeconnections:us-east-1:650251698224:connection/bca0d16e-e995-482c-97c6-e01e25dc1653
+  TemplateConfiguration: ''
+  BranchName: main
+  OutputFileName: output.json
+  RetentionPolicy: Delete
+  FullRepositoryId: Marek-bot/AWS
+  StackName: kolejnystak
+  CloudFormationResourcePermissions: |-
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Action": "*",
+                "Resource": "*"
+            }
+        ]
+    }
+tags: {}
